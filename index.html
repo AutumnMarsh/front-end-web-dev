@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Variations </title>
+    <style>
+
+        .main {
+            font-family: Arial, sans-serif;
+            }
+        ul {
+            list-style-type: none;
+            margin: 0;  /* margin and padding - same effect on li a */
+            padding: 0;
+            }
+        li a {
+            display: block;  /* enables entire link area to be clickable */
+            width: 70px;
+            padding: 10px 20px;
+            background-color: #666; 
+            text-decoration: none;
+            }
+        ul ul {
+                display: none;
+            }
+        ul ul a:hover {
+                display: block;
+            }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <ul>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#new">News</a></li>
+         <li><a href="#contact">Contact</a></li>
+         <li><a href="#about">About</a></li>
+        </ul>
+        
+        <ul>
+         <li><a href="#home">Home</a>
+            <ul>
+                <li><a href="#sub1">Sub 1</a></li>
+                <li><a href="#sub2">Sub 2</a></li> 
+            </ul>
+            </li>
+         <li><a href="#new">News</a></li>
+         <li><a href="#contact">Contact</a></li>
+         <li><a href="#about">About</a></li>
+        </ul>
+        
+        
+    </div> <!-- close main -->
+
+
+
+</body>
+</html>
