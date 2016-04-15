@@ -1,0 +1,275 @@
+/*
+ colors used:
+     dark blue: 00285c
+     mid blue: 016a99
+     dark orange: 7b441c
+     teal: 17605f
+*/
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00285c;
+}
+h1 {
+    background-color:#016a99;
+    color:#fff;
+    padding:2px 5px;
+    margin:12px 0 24px;
+}
+h3 {
+    color:#17605f;
+    border-bottom:dashed 2px #17605f;
+    margin-bottom:12px;
+}
+h4 {
+    background-color: #00285c;
+    color:#fff;
+    padding:4px 20px;
+    text-align: center;
+}
+p {
+    margin-bottom:12px;
+}
+pre {
+    font-family: Arial, sans-serif;
+    font-size:16px;
+    margin:-12px 0 12px;
+}
+a{
+    color:#016a99;
+}
+a:visited {
+    color:#00285c;
+}
+a:hover {
+    color:#7b441c;
+}
+ul {
+    margin:6px 20px 6px 40px;
+}
+#container {
+    width:960px;
+    margin:0 auto;
+    background-color:#fff;
+}
+
+/*  main menu starts here */
+#mainMenu {
+    background-color: #016a99;
+    list-style-type: none;
+    text-align: center;
+    margin:0;
+}
+
+#mainMenu li {
+    display: inline-block;
+    margin:0 10px 10px;
+    position: relative;
+}
+#mainMenu a:link {
+    color:#fff;
+    padding:10px 20px;
+    display: block;
+    border:solid 2px #fff;
+    text-decoration: none;
+}
+#mainMenu a:visited {
+    color:#ccc;
+}
+#mainMenu a:hover {
+    background-color: #fff;
+    color:#016a99;
+    border-color:#00285c;
+}
+#mainMenu a:active {
+    background-color:#00285c;
+    color:#fff;
+}
+#mainMenu a#onPage {
+    background-color:#ccc;
+    color:#016a99;
+    border-color:#ccc;
+    cursor: default;
+}
+
+/* drop down menu */
+#mainMenu ul {
+    position:absolute;
+    top:100%;
+    left:0;
+    margin:0;
+    text-align: left;
+    border:solid 2px #ccc;
+    border-top:none;
+    border-bottom:none;
+    display: none;
+}
+ul#mainMenu li:hover ul {
+    display:block;
+}
+#mainMenu ul li {
+    display: block;
+    margin:0;
+    background-color:#016a99;
+    border-bottom:solid 2px #ccc;
+}
+#mainMenu ul a:link {
+    padding:5px 5px 5px 20px;
+    border:solid 2px #016a99;
+}
+#mainMenu ul a:visited {
+    border:solid 2px #016a99;
+}
+#mainMenu ul a:hover {
+    border:solid 2px #00285c;
+}
+
+/* third tier drop down menu */
+ #mainMenu ul ul, ul#mainMenu li:hover ul ul  {
+    position:absolute;
+    top:30%;
+    left:95%;
+    z-index:5;
+    display: none;
+    border-top:solid 2px #ccc;
+}
+ul#mainMenu ul li:hover ul {
+    display:block;
+}
+/* mainMenu ends */
+
+#mainSection {
+    margin:10px;
+}
+#mainSection img {
+    padding:20px;
+    border:solid 2px #999;
+    margin-bottom:10px;
+}
+
+.onLeft {
+    float: left;
+    margin-right:12px;
+}
+.onRight {
+    float:right;
+    margin-left:12px;
+}
+.callOut {
+    border:solid 2px #999;
+    background-color:#ccc;
+    padding:20px;
+}
+.callOut li {
+    margin-bottom:4px;
+}
+.caption {
+    font-style: italic;
+    color:#999;
+    text-align: center;
+    display: block;
+    margin-bottom:12px;
+}
+.clearIt {
+    clear: both;
+}
+.article3 {
+    width:300px;
+    margin-right:20px;
+    margin-bottom:20px;
+    float:left;
+}
+.article3:last-child {
+    margin-right:0;
+}
+.article3 h2 {
+    text-align: center;
+    margin-bottom:12px;
+}
+/* internal 3 column pages */
+#colA3up {
+    width:240px;
+    float:left;
+    margin-right:15px;
+}
+#colB3up {
+    width:490px;
+    margin-right:15px;
+    float:left;
+}
+#colC3up {
+    float:left;
+    width:180px;
+}
+/* alternate column layouts */
+#colA2up {
+    width:738px;
+    border-right:solid 2px #666;
+    padding-right:10px;
+    margin-right:10px;
+    float:left;
+}
+.socialMedia {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+.socialMedia li {
+    display: inline-block;
+    margin:0 10px 20px;
+}
+.socialMedia a {
+    width:50px;
+    height:49px;
+    display:inline-block;
+    background-image: url(../images/socialMediaSprite.gif);
+    background-repeat: no-repeat;
+}
+a:hover.fb {
+    background-position: 0 -50px;
+}
+a.twitter {
+    background-position: -50px 0;
+}
+a:hover.twitter {
+    background-position: -50px -50px;
+}
+a.youtube {
+    background-position: -100px 0;
+}
+a:hover.youtube {
+    background-position: -100px -50px;
+}
+a.ig {
+    background-position: -150px 0;
+}
+a:hover.ig {
+    background-position: -150px -50px;
+}
+a.linkedin {
+    background-position: -200px 0;
+}
+a:hover.linkedin {
+    background-position: -200px -50px;
+}
+a.fish {
+    background-position: -250px 0;
+}
+a:hover.fish {
+    background-position: -250px -50px;
+}
+#footer {
+    background-color:#016a99;
+    color:#fff;
+    text-align: center;
+    padding:10px;
+}
+
+
+
+
+
+

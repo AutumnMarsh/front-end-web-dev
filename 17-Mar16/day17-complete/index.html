@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>---Page title goes here---</title>
+        
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+        
+        <link href='https://fonts.googleapis.com/css?family=Fanwood+Text:400,400italic|Catamaran:400,700' rel='stylesheet' type='text/css'>
+        
+        <link href="styles/main.css" type="text/css" rel="stylesheet" />
+    
+    </head>
+    
+    <body>
+        <header>
+            <h1>The HTML5 / CSS3 Blog</h1>
+        </header>
+        
+        <nav id="main">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+            </ul>
+        </nav>
+        
+        <section id="intro">
+            <header>
+                <h2>Do you love new technology as much as I do?</h2>
+                <h3>HTML5 gives more meaning to your content</h3>
+            </header>
+            
+            <article>
+                <p>HTML 5 is the next major version of HTML. It introduces a bunch of new elements that will make our pages more semantic. This will make it a lot easier for search engines and screenreaders to navigate our pages, and improve the web experience for everyone.</p>
+                <img src="images/header.png" alt="html5" />
+            </article>
+        </section><!-- close intro section -->
+        
+        <aside>
+            <section>
+                <header><h3>Categories</h3></header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Category 1</a></li>
+                        <li><a href="#">Category 2</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">Category 3</a></li>
+                    </ul>
+                </nav>
+            </section>
+            
+            <section>
+                <header><h3>Archives</h3></header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Oct 2015</a></li>
+                        <li><a href="#">Nov 2015</a></li>
+                        <li><a href="#">Dec 2015</a></li>
+                        <li><a href="#">Jan 2016</a></li>
+                        <li><a href="#">Feb 2016</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+        
+        <section id="blogPost">
+            <header>
+                <h2>HTML5 - What's new?</h2>
+                <p>Posted on March 1, 2016 by <a href="#">Emily</a></p>
+            </header>
+            
+            <article>
+                <p>In HTML 5 there are specific tags meant for marking up the header, navigation, sidebar and footer. First, take a look at the markup and I’ll explain afterwards:</p>
+                <figure>
+                    <img src="images/codeExample.jpg" alt="code example" />
+                    <figcaption> HTML5 code example</figcaption>
+                </figure>
+                
+                <p>It still looks like HTML markup, but there are a few things to note: In HTML 5, there is only one doctype. It is declared in the beginning of the page by &lt;!doctype html&gt;. It simply tells the browser that it’s dealing with an HTML-document.</p>
+
+                <p>The new tag header is wrapped around introductory elements, such as the page title or a logo. It could also contain a table of contents or a search form. Every header typically contains a heading tag from &lt;h1&gt; to &lt;h6&gt;. In this case the header is used to introduce the whole page, but we’ll use it to introduce a section of the page a little later.</p>
+
+                <p>The nav-tag is used to contain navigational elements, such as the main navigation on a site or more specialized navigation like next/previous-links.The section-tag is used to denote a section in the document. It can contain all kinds of markup and multiple sections can be nested inside each other.</p>
+
+                <p>Aside is used to wrap around content related to the main content of the page that could still stand on it’s own and make sense. In this case we’re using it for the sidebar.</p>
+
+                <p>The footer-tag should contain additional information about the main content, such as info about who wrote it, copyright information, links to related documents and so on.</p>
+
+                <p>Instead of using divs to contain different sections of the page we are now using appropriate, semantic tags. They will make it a lot easier for search engines and screen readers to figure out what’s what in a page.</p>
+            </article>
+        </section><!-- close blogPost section -->
+        
+        <section id="comments">
+            <header><h3>Comments:</h3></header>
+            
+            <article>
+                <header><a href="#">Bozo the Clown</a> on <time datetime="2016-03-10T09:00:45">March 10, 2016 at 9:00am</time></header>
+                <p>In 90's raw denim, cliche kombucha incididunt farm-to-table lomo consequat placeat. Est DIY single-origin coffee, pour-over irony aliquip reprehenderit. Fashion axe reprehenderit velit, franzen fanny pack kogi dolore tattooed sustainable mixtape +1. Et banh mi duis labore mollit humblebrag.</p>
+            </article>
+            
+            <article>
+                <header><a href="#">Hipster Bob</a> on <time datetime="2016-03-12T23:00:45">March 12, 2016 at 11:00pm</time></header>
+                <p>Ut roof party duis, marfa keffiyeh ex qui commodo laborum incididunt actually kickstarter cred. Umami aute organic, selvage post-ironic semiotics helvetica pabst ramps cillum readymade pinterest messenger bag authentic kinfolk.</p>
+            </article>
+            
+            <article>
+                <header><a href="#">Tina Fey</a> on <time datetime="2016-03-14T20:22:45">March 14, 2016 at 8:22pm</time></header>
+                <p>Cupidatat disrupt nesciunt, green juice VHS schlitz ad whatever deep v man bun. YOLO butcher tattooed, selfies mollit shabby chic swag qui hoodie. </p>
+            </article>
+        </section>
+        
+        <footer>
+            <section>
+                <header><h3>About</h3></header>
+                <p> Laborum everyday carry vice, kitsch consequat gastropub tousled franzen drinking vinegar plaid food truck iPhone disrupt slow-carb direct trade. Celiac sartorial meh minim proident. Laborum chartreuse migas kinfolk culpa banjo. Sriracha shabby chic in ex tote bag. Art party four dollar toast bespoke, hashtag post-ironic dreamcatcher viral voluptate keffiyeh.</p>
+            </section>
+            
+            <section id="resources">
+                <header><h3>Other Resources:</h3></header>
+                <ul>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#">CSS Zen Garden</a></li>
+                    <li><a href="#">Lynda.com</a></li>
+                    <li><a href="#">Morguefiles.com</a></li>
+                </ul>
+            </section>
+            
+            <section id="popular">
+                <header><h3>Popular Posts</h3></header>
+                <ul>
+                    <li><a href="#">HTML5 - all new</a></li>
+                    <li><a href="#">HTML5 everything</a></li>
+                    <li><a href="#">What you can do with CSS</a></li>
+                    <li><a href="#">Video and Audio tags</a></li>
+                    <li><a href="#">How to tag time</a></li>
+                </ul>
+            </section>
+        
+        </footer>
+    
+    </body>
+    
+</html>
