@@ -1,0 +1,214 @@
+/* colors:
+light blue #219dd1
+dark blue  #243a6c
+dark grey  #333
+orange     #c37816
+*/
+
+header, nav, section, article, main, aside, footer, video, audio {
+    display: block;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background:url(../images/background.jpg) repeat-x #fff;
+    font-family: sans-serif;
+}
+#container {
+    width: 960px;
+    margin: 0 auto;
+    border: solid 3px white;
+}
+a {
+    color: #233f71;
+}
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #c37816;
+}
+h1 {
+    font-size: 1.25em;
+    color: #219dd1;
+    padding: 0 20px 10px;
+    background-color: #243a6c;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 135px; /* PREVIOUSLY NOT A PARAMETER */
+}
+ul, ol, p {
+    padding: 10px;
+}
+header {
+    background-color: #243a6c;
+    position: fixed;  /* PREVIOUSLY RELATIVE */
+    top: 0;           /* PREVIOUSLY NOT A PARAMETER */
+    z-index: 5;       /* PREVIOUSLY NOT A PARAMETER */
+}
+#turtlePic {
+    position: absolute;
+    right: -90px;
+    top: -3px;
+}
+#mainNavigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 20px;
+    font-size: 14px;
+}
+#mainNavigation a {
+    color: #fff;
+    padding: 6px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+#mainNavigation a:hover {
+    background-color: #333;
+}
+#mainNavigation li {
+    width: 150px;
+    float: left;
+    margin: 6px 15px 20px 0;
+    border: solid 1px #ccc;
+    text-align: center;
+    display: block;
+}
+#mainNavigation ul li li {
+    margin: 0; /* otherwise they inherit margin */
+    border-top: none;
+}
+#mainNavigation ul li:hover > ul {   /* direct descendant rule */
+    display: block;
+}
+#mainNavigation ul li {
+    position: relative; /* by itself, does not change anything. for subsequent li's */
+    background-color: #243a6c;
+}
+#mainNavigation ul:after {
+    content:"";
+    clear: both;
+    display: block;
+}
+/* sub-menu items */
+#mainNavigation ul ul {
+    margin: 0;
+    display: none;
+    position: absolute;
+    z-index: 5;  /* so we don't lose dropdown when not clicking precisely on parent li */
+    top: 100%;
+    left: -1px;
+}
+#mainNavigation ul ul ul {
+    top: 0%;
+    left: 100%;
+}
+
+/*
+
+These 2 rules are not required if we use a direct descendant > rule.
+See above.
+
+#mainNavigation ul li:hover ul ul {
+    display: none;
+}
+#mainNavigation ul ul li:hover ul {
+    display: block;
+}
+
+*/
+
+
+footer {
+    margin-top: 25px;
+    background-color: #243a6c;
+    color: #ccc;
+    text-align: center;
+    border-top: solid 3px white;
+    position: relative;
+}
+#turtleHelp {
+    position: absolute;
+    left: -20px;
+    top: -35px;
+}
+video {
+    border: solid 3px #fff;
+    float: left;
+    margin: 15px;
+}
+#saveTurtle {
+    background-color: #243a6c;
+    border-radius: 10px 0 0 10px;
+    border: solid 3px #fff;
+    padding: 10px;
+    color: #fff;
+    width: 150px;
+    position: fixed;
+    top: 25%;
+    right: -5px;
+}
+#saveTurtle a {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
