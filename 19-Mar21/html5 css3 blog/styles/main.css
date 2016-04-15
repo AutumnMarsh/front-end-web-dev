@@ -1,0 +1,280 @@
+/*
+    colors:
+
+    fonts:
+    font-family: 'Fanwood Text', serif;
+    font-family: 'Catamaran', sans-serif;
+
+*/
+
+header, nav, section, aside, article, footer, video, audio, main {      
+    display: block;
+}
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    font-family: 'Catamaran', Arial, sans-serif;
+    background-color:#f0f0f0;
+    width:940px;
+    margin:0 auto;
+    padding:20px 0;
+    font-size:16px;
+}
+h1 {
+    font-family: 'Fanwood Text', serif;
+    font-size:2.25em; /* 36px */
+    line-height: 2.5;
+}
+h2 {
+    font-family: 'Fanwood Text', serif;
+    font-size:1.75em;/* 28px */
+    line-height: 2;
+}
+h3 {
+    font-size:1.375em;/* 22px */
+    line-height: 1.5;
+}
+p {
+    font-size: .875em;/* 14px */
+    line-height: 1.5;
+    padding-bottom:20px;
+}
+
+/* navigation */
+nav#main {
+    background-color: #333;
+    width:100%;
+    position: absolute;
+    left:0;
+}
+nav#main ul {
+    width:940px;
+    margin:0 auto;
+    list-style-type: none;
+}
+nav#main li {
+    float:left;
+}
+nav#main a {
+    color:#ccc;
+    text-decoration: none;
+    display: block;
+    width:140px;
+    text-align: center;
+    margin-right: 20px;
+    padding:4px 0;
+}
+nav#main a:hover {
+    color:#fff;
+}
+
+/* end navigation */
+
+/* intro section */
+#intro {
+    position: relative;
+    margin-top: 60px;
+    background: url(../images/header_background.jpg) repeat-y right top #10b771; 
+    padding: 44px 44px 65px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px #777;
+}
+#intro img {
+    position: absolute; /* based on intro rule above */
+    top: 20px;
+    right: 60px;
+}
+#intro h2, #intro h3, #intro p {
+    width: 600px; /* so they don't get pulled under html5 image */
+}
+#intro h2 {
+    line-height: 1.2;
+    color: #fff;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    font-size: 2.5em; 
+}
+#intro h3 {
+    color: #fff;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: 1em;
+    font-size: 1.75em;
+}
+#intro p {
+    padding: 0;
+    color: #d9f499;
+}
+
+/* aside */
+
+aside {
+    float: right;
+    width: 320px;
+    margin-top: 90px;
+}
+aside section {
+    background-color: #e3e3e3;
+    padding: 10px 20px;
+    margin: 20px 0 0 20px;
+    border-radius: 10px;
+}
+aside ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+aside a {
+    color: #000;
+    text-decoration: none;
+    display: block; /* won't change appearance. increases clickable area */
+    margin-bottom: 4px;
+}
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* blog post area */
+#blogPost {
+    width: 620px;
+}
+#blogPost header h2 {
+    line-height: 1.2;
+    padding-bottom: 0;
+    margin-top: 10px;
+}
+#blogPost header p, #blogPost header a {
+    color: #666;
+    font-style: italic;
+}
+#blogPost p {
+     font-size: .85em;
+}
+#blogPost a:hover {
+    color: #000;
+    text-decoration: none;
+}
+#blogPost article {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 25px;
+    -webkit-column-gap: 25px;
+    column-gap: 25px;
+    text-align: justify;
+}
+figure {
+    margin-bottom: 10px;
+}
+figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: .7em;
+    margin-top: 5px;
+    text-align: center;
+}
+#comments {
+    border-top: solid 1px #d7d7d7;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+#comments article {
+    display: table;
+    padding: 20px;
+}
+#comments article header {
+    display: table-cell;
+    width: 200px;
+    padding-right: 20px;
+    font-size: .8em;
+    color: #666;
+}
+#comments article header a {
+    display: block;
+    font-weight: bold;
+    color: #000;
+}
+#comments article header a:hover {
+    text-decoration: none;
+}
+#comments article:nth-child(even) {
+    background-color: #e3e3e3;
+    border: solid 1px #d7d7d7;
+    border-radius: 10px;
+}
+
+/* footer */
+
+footer {
+    background-color: #222;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+}
+#footerContainer {
+    width: 940px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: table;    
+}
+footer section {
+    display: table-cell;
+    width: 300px;
+}
+footer h3, footer p {
+    color: #fff;
+}
+footer a {
+    color: #ccc;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+footer ul {
+    list-style-type: square;
+    color: #565656;
+    margin-left: 15px;
+    font-size: .8em;
+}
+footer #resources {
+    padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
