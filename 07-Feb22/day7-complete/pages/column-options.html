@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <title>Creating columns</title>
+    
+    <style type="text/css">
+        .container {
+            width:675px;
+            border:solid 1px #666;
+            margin:0 auto 30px;
+        }
+        /*h1 {
+            font-family:Verdana, sans-serif;
+            font-size: 25px;
+            margin-top:0;
+            padding:5px;
+            background-image: url(../images/headerBG.jpg);
+            background-repeat: repeat-x;
+            background-position: center bottom;
+            background-color:#7bc1fc;
+            color:#fff;
+        }*/
+        h1 {
+            font-family:Verdana, sans-serif;
+            font-size:25px;
+            margin-top:0;
+            padding:5px;
+            background:url(../images/headerBG.jpg) repeat-x center bottom #7bc1fc;
+            color:#fff;
+        }
+        .box {
+            width:200px;
+            border:solid 1px #7bc1fc;
+        }
+        .set1 .box {
+            float:left;
+            margin-right:15px;
+        }
+        .set2 .box {
+            display: inline-block;
+            margin-right:15px;
+        }
+        .color {
+            background-color:yellow;
+        }
+        .clearIt {
+            clear:both;
+        }
+        
+        /* container 2 styles */
+        .col1{
+            background-color:#ccc;
+            width:17%;
+            float:left;
+            margin-right:3%
+        }
+        .col2{
+            background-color:#333;
+            width:50%;
+            float:left;
+        }
+        .col3{
+            background-color:#666;
+            width:27%;
+            float:right;
+            margin-left:3%
+        }
+        .bottom {
+            background-color:#000;
+            color:#fff;
+        }
+        
+        /* container 3 */
+        .onLeft {
+            float:left;
+            margin-right:15px;
+        }
+        .onRight {
+            float:right;
+            margin-left:15px;
+        }
+   
+        
+       
+    </style>
+    
+    </head>
+    
+<body>
+    <div class="container set1">
+        <div class="box">
+            <h1>Box Title 1</h1>
+            <p>some box content...</p>
+        </div>
+        <div class="box">
+            <h1>Box Title 2</h1>
+            <p>some box content...</p>
+        </div>
+        <div class="box">
+            <h1>Box Title 3</h1>
+            <p>some box content...</p>
+        </div>
+        <p class="color clearIt">A good time to bike is in the morning.</p>
+    </div><!-- close container -->
+    
+    <div class="container set2">
+        <div class="box">
+            <h1>Box Title 1</h1>
+            <p>some box content...</p>
+        </div>
+        <div class="box">
+            <h1>Box Title 2</h1>
+            <p>some box content...</p>
+        </div>
+        <div class="box">
+            <h1>Box Title 3</h1>
+            <p>some box content...</p>
+        </div>
+        <p class="color clearIt">A good time to bike is in the morning.</p>
+    </div><!-- close container -->
+    
+    <div class="container">
+        <div class="col1">
+            <h1>Box Title 1</h1>
+            <p>some box content...</p>
+        </div>
+        <div class="col2">
+            <h1>Box Title 2</h1>
+            <p>some box content...</p>
+        </div>
+        <div class="col3">
+            <h1>Box Title 3</h1>
+            <p>some box content...</p>
+        </div>
+        <div class="clearIt"></div>
+        <div class="bottom">
+            <p>Hey, I'm at the very bottom of everything!</p>
+        </div>
+    </div><!-- close container -->
+    
+    <div class="container">
+        <p><img src="../images/circle2.jpg" alt="circle" class="onLeft" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat eleifend arcu ac faucibus. </p>
+        <div class="clearIt"></div>
+
+        <p><img src="../images/circle2.jpg" alt="circle" class="onRight" />Maecenas mattis sapien ligula, eget dapibus elit consequat vitae. Praesent vitae dui elit. Nullam scelerisque enim ultrices urna sodales blandit. Mauris convallis lacus ut lacus porta, vel sodales augue commodo. Pellentesque ut est tempor, iaculis felis at, laoreet dui. Cras libero odio, feugiat suscipit dui ut, ultrices sagittis dolor. Integer eu lorem sit amet risus blandit vehicula vel sed odio.</p>
+         <div class="clearIt"></div>
+    </div><!-- close container -->
+    <h1>I'm the <br />very last <br />header!!</h1>
+        
+    
+</body>
+    
+</html>

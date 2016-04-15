@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <title>CSS styling</title>
+    
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        div {
+            width:70%;
+            border:solid 1px #666;
+            margin:0 auto;
+            font-family:Verdana, Arial, sans-serif;
+            padding:15px;
+        }
+        h1, h2 {
+            font-family:Georgia, Palatino, serif;
+        }
+        h1 {
+            font-size:35px;
+            font-weight:normal;
+            letter-spacing: -1px;
+            border-bottom:dashed 1px #666;
+            margin-bottom:5px;
+            padding-bottom: 3px;
+        }
+        h2 {
+            font-size:25px;
+            font-variant: small-caps;
+            font-style: oblique;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            color:#666;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color:#999;
+        }
+        p {
+            font-size: 12px;
+            margin-bottom:10px;
+            line-height: 1.4;
+        }
+        ol,ul{
+            margin:0 20px 10px 60px;/* indent on list */
+            font-size: 12px;
+        }
+        ol {
+            list-style-type: upper-alpha;
+        }
+        ol ol {
+            margin:0 20px 0;
+            list-style-type: lower-alpha;
+        }
+        ul {
+            list-style-type: circle;
+            list-style-image: url(images/tri.gif);
+        }
+        ul ul {
+           margin:0 20px 0;
+            list-style-type: square;
+            list-style-image: none;
+        }
+        
+    </style>
+        
+    </head>
+    
+<body>
+   <div>
+    <h1>This is a big ole header</h1>
+    <h2>This is a smaller header</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit orci ex. Mauris at ligula non mi tristique suscipit. Etiam elementum interdum varius. Etiam in neque facilisis, aliquam dui a, laoreet orci. Phasellus sit amet scelerisque enim. Duis porta lacus libero, nec dignissim nibh pharetra laoreet.</p>
+    
+    <p>Curabitur sit amet purus venenatis, auctor tortor sit amet, feugiat velit. Aenean arcu nisl, cursus a cursus quis, pharetra sit amet nulla. Pellentesque ullamcorper dolor et congue vestibulum. In orci augue, condimentum sed condimentum at, mollis ac felis. In non fermentum ligula. Ut sit amet facilisis velit. Sed luctus vulputate quam, ornare euismod enim posuere sit amet.</p>
+    
+    <h3>Things to do:</h3>
+    <ol>
+        <li>Check my email for test issues</li>
+        <li>Feed my family
+            <ol>
+                <li>kids</li>
+                <li>dog</li>
+                <li>geckos</li>
+            </ol>
+        </li>
+        <li>Swim</li>
+        <li>Buy Chocolate</li>
+        <li>Get gas for car</li>
+    </ol>
+    
+    <h3>Things that I like:</h3>
+    <ul>
+        <li>Coding
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+            </ul>
+        </li>
+        <li>Chocolate</li>
+        <li>Swimming</li>
+        <li>Reading</li>
+    </ul>
+
+    <p>Proin congue lorem lectus, quis mattis sapien pulvinar at. Nunc aliquam, turpis sit amet bibendum congue, justo justo rhoncus mi, id facilisis quam arcu eget neque. Ut vehicula, enim eu aliquam maximus, odio sem bibendum nisi, iaculis cursus odio ligula fringilla est. Aenean id velit volutpat, feugiat sem et, mattis quam. Aliquam sodales malesuada venenatis. Ut sit amet tortor pharetra, malesuada mauris eget, iaculis lacus. Suspendisse sit amet euismod urna.</p>
+   </div> 
+</body>
+    
+</html>

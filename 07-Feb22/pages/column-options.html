@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <title>Multiple Columns and Float</title>
+    
+    <style type="text/css">
+        
+        .container {
+            width: 675px;
+            border: solid 1px #666;
+            margin: 0 auto 30px;   /*to horizontally center container*/
+        }
+        /*h1 {
+            font-family: Verdana, sans-serif;
+            font-size: 25px;
+            margin-top: 0;
+            padding: 5px;
+            background-image: url(../images/circle2.jpg);
+            background-repeat: repeat-x;
+            background-position: center bottom;  /*horizontal then vertical*/
+            background-color: green;
+        }*/
+        h1 {
+            font-family: Verdana, sans-serif;
+            font-size: 25px;
+            margin-top: 0;
+            padding: 5px;
+            background:url(../images/headerBG.jpg) repeat-x center bottom green;
+            color:green;
+        }
+        .box {
+            width: 200px;
+            border: solid 1px #7bc1fc;
+            /*float: left;    removed during alternate method of making columns*/
+            /*margin-right: 15px; removed */
+        }
+        /*boxes that are children of set1*/
+        .set1 .box {
+            float: left;
+            margin-right: 15px;
+        }
+        .set2 .box {
+            display: inline-block;
+            margin-right: 12px;
+        }
+        .color {
+            background-color: yellow;
+        }
+        .clearIt {
+            clear:left;  /*left, right or both*/
+        }
+      
+        /*container 2 specific rules*/
+        /*you could float col3 right but make sure your math adds up to 100%*/
+        .col1 {
+            background-color: #ccc;
+            width: 20%;
+            float: left;
+        }
+        .col2 {
+            background-color: #666;
+            width: 47%;
+            margin-left:3%;
+            float: left;
+        }
+        .col3 {
+            background-color: #999;
+            width: 27%;
+            margin-left:3%;
+            float: left;
+        }
+        .bottom {
+            background-color: #000;
+            color: #fff;
+        }
+        /*container 3 rules*/
+        img {
+            float:left;
+            width:75px;
+            height:75px;
+        }
+        .onLeft {
+            float:left;
+            margin-right: 15px;
+        }
+        .onRight {
+            float: right;
+            margin-left: 15px;
+        }
+        
+    </style>
+    
+    </head>
+    
+   <body>
+       <div class="container set1">
+           <div class="box">
+               <h1>Box Title 1</h1>
+               <p>Some box content...</p>
+           </div>
+           
+           <div class="box">
+               <h1>Box Title 2</h1>
+               <p>Some box content...</p>
+           </div>
+           
+           <div class="box">
+               <h1>Box Title 3</h1>
+               <p>Some box content...</p>
+           </div>
+           
+           <p class="color clearIt">A good time to bike is in the morning.</p>
+       </div>
+       <!-- close container -->
+       
+       
+       <div class="container set2">
+           <div class="box">
+               <h1>Box Title 1</h1>
+               <p>Some box content...</p>
+           </div>
+           
+           <div class="box">
+               <h1>Box Title 2</h1>
+               <p>Some box content...</p>
+           </div>
+           
+           <div class="box">
+               <h1>Box Title 3</h1>
+               <p>Some box content...</p>
+           </div>
+           
+           <p class="color clearIt">A good time to bike is in the morning.</p>
+       </div>
+       <!-- close container -->
+       
+       
+       <div class="container">
+           <div class="col1">
+               <h1>Box Title 1</h1>
+               <p>Some box content...</p>
+           </div>
+           
+           <div class="col2">
+               <h1>Box Title 2</h1>
+               <p>Some box content...</p>
+           </div>
+           
+           <div class="col3">
+               <h1>Box Title 3</h1>
+               <p>Some box content...</p>
+           </div>
+           
+        <div class="clearIt"></div>
+        
+        <div class="bottom">
+               <p>Hey, I'm the last thing!</p>
+           </div>
+        
+       </div>
+       <!-- close container -->
+       
+       
+        <div class="container">
+               <p><img src="../images/circle2.jpg" alt="Circle One" class="onLeft"/> sed diam quis odio mollis gravida in et eros. Ut rutrum nibh bibendum, pretium enim eget, cringilla.</p>
+               
+               <div class="clearIt"></div>
+               
+               <p><img src="../images/circle2.jpg" alt="Circle One" class="onRight"/> sed diam quis odio mollis gravida in et eros. Ut rutrum nibh bibendum, pretium enim eget, congue diam. Nulla facilisi. Integer nec mauris accumsan, consequat leo ultricies, dictum tellus. Sed nulla justo, suscipit rhoncus maximus et, lobortis molestie risus. Nunc rutrum id est ullamcorper congue. Integer eleifend mattis urna a fringilla. Sed a turpis et massa aliquet viverra sit amet a nulla. Quisque et aliquet ex. Pellentesque at efficitur erat. Maecenas convallis nulla sapien, a elementum leo ultricies sed. Aenean aliquet, nisl ac venenatis sodales, metus metus mattis est, suscipit ultrices turpis metus vitae lorem. Nullam nec magna mollis, vestibulum urna non, dictum tortor. Vivamus pharetra tortor velit, quis maximus lacus bibendum ac. Duis vel fringilla leo. Mauris et interdum mauris.</p>
+               
+               <div class="clearIt"></div>
+               
+           </div>
+           
+           <h1>This is to test the background image. <br /> To do so, I need a couple of lines.</h1>
+  
+       
+   </body>
+   
+</html>
