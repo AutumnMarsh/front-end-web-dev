@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <title>Creating Columns by Using CSS Table Display</title>
+    
+    <style type="text/css">
+        #container {
+            width: 75%;
+            margin: 0 auto;
+            display: table; /*will work without this part*/
+            border-spacing: 10px;
+            /* border-collapse: separate; does not do anything */
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            border: solid 1px black;
+            display: table-cell;
+            vertical-align: middle; /*will not work without table-cell */
+            text-align: center;
+           
+        }
+    </style>
+    
+    </head>
+    
+   <body>
+       <div id="container">
+           <div class="box">This is the first box.</div>
+           <div class="box">This is the second box.</div>
+           <div class="box">This is the third box.</div>
+       </div>
+   </body>
+   
+</html>

@@ -1,0 +1,86 @@
+/*
+ colors used:
+     dark blue: 00285c
+     mid blue: 016a99
+     dark orange: 7b441c
+     teal: 17605f
+*/
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00285c;
+}
+#container {
+    width:960px;
+    margin:0 auto;
+    background-color:#fff;
+}
+
+/*  main menu starts here */
+#mainMenu {
+    background-color: #016a99;
+    list-style-type: none;
+    text-align: center;
+}
+#mainMenu li {
+    display: inline-block;
+    margin:0 10px 10px;
+}
+#mainMenu a:link {
+    color:#fff;
+    padding:10px 20px;
+    display: block;
+    border:solid 2px #fff;
+    text-decoration: none;
+}
+#mainMenu a:visited {
+    color:#ccc;
+}
+#mainMenu a:hover {
+    background-color: #fff;
+    color:#016a99;
+    border-color:#00285c;
+}
+#mainMenu a:active {
+    background-color:#00285c;
+    color:#fff;
+}
+/* mainMenu ends */
+
+#mainSection {
+    margin:10px;
+}
+#mainSection img {
+    padding:20px;
+    border:solid 2px #999;
+    margin-bottom:10px;
+}
+.article3 {
+    width:300px;
+    margin-right:20px;
+    margin-bottom:20px;
+    float:left;
+}
+.article3:last-child {
+    margin-right:0;
+}
+.article3 h2 {
+    text-align: center;
+    margin-bottom:12px;
+}
+#footer {
+    background-color:#016a99;
+    clear: both;
+    color:#fff;
+    text-align: center;
+    padding:10px;
+}
+
+
+
+
+
+

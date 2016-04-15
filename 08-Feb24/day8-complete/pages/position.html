@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <title>Using position in CSS</title>
+    
+    <style type="text/css">
+        2#container {
+            width:75%;
+            margin:0 auto;
+            border:solid 2px black;
+            position: relative;
+        }
+        #container {
+            width: 75%;
+            margin: 200px;
+            border: solid black 2px;
+            position: relative;
+        }
+        #box1, #box2, #box3 {
+            width:200px;
+            height:200px;
+        }
+        #box1 {
+            background-color:orange;
+            position: absolute;
+            top:-25px;
+            left:25px;
+            z-index:5;
+        }
+        #box2 {
+            background-color:cadetblue;
+            position: absolute;
+            top:25px;
+            left:50px;
+        }
+        #box3 {
+            background-color:crimson;
+           
+        }
+    </style>
+    
+    </head>
+    
+<body>
+    <div id="container">
+        <div id="box1">This is box 1</div>
+        <div id="box2">This is box 2</div>
+        <div id="box3">This is box 3</div>
+    </div>
+    
+</body>
+    
+</html>

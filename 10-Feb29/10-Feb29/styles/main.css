@@ -1,0 +1,86 @@
+/*
+    Colors used:
+    Dark blue #00286c
+    Mid-blue  #016a99
+    Dark orange #7b441c
+    Teal      #17605f
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+#container {
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+
+/* menu styles */
+#mainMenu {
+    background-color: #016a99;
+    list-style-type: none;
+    text-align: center;
+}
+#mainMenu li {
+    display: inline-block;
+    
+}
+#mainMenu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    margin: 0 5px 10px;
+    border: solid 2px #fff;
+}
+#mainMenu a:visited {
+    color: #ccc;
+    border-color: #ccc;
+}
+#mainMenu a:hover {
+    background-color: #fff;
+    color: #026b9a;
+    border-color: #00285c;
+}
+#mainMenu a:active {
+    background-color: #00285c;
+    color: #fff;
+}
+/* end menu styles */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00285c;
+}
+#mainSection {
+    margin: 10px;
+}
+#mainSection img {
+    padding: 20px;
+    border: solid 2px #999;
+    margin-bottom: 10px;
+}
+.article3 {
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+.article3 h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+.article3:last-child {
+    margin-right: 0;
+}
+#footer {
+    background-color: #016a99;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}

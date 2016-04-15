@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS1 Selector Types</title>
+<style>
+	*						{margin:0;padding:0;}
+	body					{margin:20px 0 0 20px;font-family:Arial,Helvetica,sans-serif;}
+	.heading 				{font-size:20px;font-weight:bold;color:blue;}
+	#intro	 				{font-size:16px;color:red;}
+	h1, p					{margin-bottom:20px;}
+	p strong				{color:green;}
+	#intro::first-letter 	{font-size:32px;}
+	#ct::first-line			{font-style:italic;}
+	a:link, a:visited		{color:black;}
+	a:hover					{color:red;text-decoration:none;background:silver;}
+	a:active				{text-decoration:line-through;}
+</style>
+</head>
+
+<body>
+<h1 class="heading">Welcome</h1>
+
+<p id="intro">With innovative approaches and advanced methodologies, <a href="http://www.vectacorp.com">Vecta Corporation</a> provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
+
+<h1 class="heading">Our Solutions</h1>
+
+<p><strong>vProspect 2.0</strong><br>
+Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.</p>
+
+<p><strong>vConvert 2.0</strong><br>
+Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.</p>
+
+<p><strong>vRetain 1.0</strong><br>
+Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.</p>
+
+<h1 class="heading">Client Testimonials</h1>
+
+<p>Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.</p>
+
+<p id="ct">Zak Ruvalcaba<br>
+Founder and CEO<br>
+Module Media</p>
+</body>
+</html>
