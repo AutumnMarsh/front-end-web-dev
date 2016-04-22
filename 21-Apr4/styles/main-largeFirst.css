@@ -1,0 +1,48 @@
+/*
+    colors:
+*/
+
+header, nav, section, aside, article, footer, video, audio, main {      
+    display: block;
+}
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 15px;
+    color: white;
+    background-color: #369;
+}
+footer {
+        color: #369;
+        background-color: white;
+        font-size: 80%;
+        text-align: center;
+        font-style: italic;
+    }
+
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: darkred;
+    }
+    footer {
+        color: darkred;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: black;
+    }
+    footer {
+        color: black;
+    }
+    
+}
+
+
